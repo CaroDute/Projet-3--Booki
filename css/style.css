@@ -23,6 +23,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -149,6 +150,30 @@ nav ul {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+/* Footer */
+
+footer {
+    display: flex;
+    background-color: #f2f2f2;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 25px;
+}
+
+.footer-item {
+    margin-right: 200px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 20px 0 20px 0;
+}
+
 
 
 
