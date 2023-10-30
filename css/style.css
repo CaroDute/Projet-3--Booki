@@ -63,16 +63,19 @@ a {
 
 /* Header */
 
-nav {
+header {
+    height: 79px;
     display: flex;
     justify-content: space-between;
-
 }
 
-nav img {
+.logo-img {
+    display: flex;
+    align-items: center;
+}
+
+header img {
     height: 19px;
-    padding-top: 25px;
-    padding-bottom: 25px;
 } 
 
 nav ul {
@@ -81,11 +84,17 @@ nav ul {
     gap: 68px;
 }
 
+li:hover {
+    color: #0065FC;
+}
+
+
 .bordure-hover:hover {
     border-top: #0065FC solid 2px;
-    padding: 15px;
+    padding: 16px;
     margin: -16px;
 }
+
 
 
 /****** Hebergements And Populaires ***********/
@@ -173,9 +182,6 @@ footer ul {
 footer li {
     margin: 20px 0 20px 0;
 }
-
-
-
 
 
 
