@@ -23,7 +23,7 @@
             <nav>
                 <ul>
                     <div class="bordure-hover">
-                        <li>Hébergements</li>
+                        <li> <a href="#hebergements-a-marseille">Hébergements</a></li>
                     </div>
                     <div class="bordure-hover">
                         <li>Activités</li>
@@ -32,8 +32,27 @@
             </nav>
         </header>
         <main>
+            <div class="recherche-and-filtres">
+                <div>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p class="recherche-text">En plein centre-ville ou en pleine nature</p>
+                </div>
+                <div class="form-rechercher">
+                    <div class="icon-rechercher">
+                        <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+                    </div>
+                    <form method="get" action="#">
+                        <input type="text" name="recherche" id="recherche" placeholder="Marseille,France" class="input-content">
+                        <input type="button" name="rechercher" id="rechercher" value="Rechercher" class="rechercher-button">
+                    </form>
+                </div>
+            </div>
+
+
+
+
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements" id="hebergements-a-marseille">
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
