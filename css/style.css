@@ -97,10 +97,13 @@ li:hover {
 
 /******** Section Recherche and Filtres ********/
 
+
+/*** Recherche ***/
+
 .recherche-and-filtres {
     display: flex;
     flex-direction: column;
-    gap: 23px;
+    gap: 35px;
 }
 
 h1 {
@@ -110,6 +113,7 @@ h1 {
 
 .recherche-text {
     font-size: 16px;
+    margin-bottom:0 ;
 }
 
 .form-rechercher {
@@ -134,17 +138,18 @@ form {
 
 .rechercher-button {
     border-radius: 0 15px 15px 0;
-    border: none;
+    border: none; 
     background-color: #0065FC;
     color: white;
     width: 132px;
     font-size: 18px;
     font-weight: 500;
-}
+} 
 
 .input-content {
     border: 1px solid #f2f2f2;
     border-right: none;
+    width: 195px;
 }
 
 ::placeholder {
@@ -153,6 +158,67 @@ form {
     font-weight: bold;
     font-size: 14px;
  }
+
+ /**** Filtres ***/
+
+.filtres {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filtres p {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filtres-items {
+    border: 2px solid #d9d9d9;
+    padding: 10px 19px;
+    border-radius: 25px;
+    background-color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.filtres i {
+    padding-right: 10px;
+}
+
+.filtres-items:hover {
+    background-color: #DEEBFF;
+}
+
+/*********** Textes infos *********/
+
+.recherche-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.recherche-info p {
+    margin: 0;
+}
+
+.icon-info {
+    border: 1px solid #d9d9d9;
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-info i {
+    font-size: 12px;
+}
+
+
 
 
 /****** Hebergements And Populaires ***********/
