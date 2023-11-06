@@ -237,9 +237,8 @@ form {
 
 .hebergements-cards {
     display: flex;
-    margin-top: 33px;
     justify-content: space-between;
-    gap: 30px;
+    margin-top: 33px; 
 }
 
 .hebergements-cards a {
@@ -251,10 +250,12 @@ form {
     height: 114px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    display: flex;
 }
 
 .hebergements-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 4px 10px 10px 10px;
     max-height: 83px;
 }
@@ -351,7 +352,6 @@ form {
     height: 380px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    
 }
 
 .activites-cards .card {
@@ -360,6 +360,12 @@ form {
     width: 100%;
 }
 
+.activites-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 59px;
+}
 
 .activites-cards .card-title {
     padding: 20px 19px;
@@ -370,10 +376,7 @@ form {
     width: 25%;
 }
 
-.activites-cards .card-content {
-    display: flex;
-    align-items: stretch;
-}
+
 
 /* Footer */
 
