@@ -150,7 +150,6 @@ form {
     border: 1px solid #f2f2f2;
     border-right: none;
     width: 195px;
-    
 }
 
 ::placeholder {
@@ -167,6 +166,11 @@ form {
     display: flex;
     gap: 15px;
 }
+
+    .buttons {
+        display: flex;
+        gap: 15px;
+    }
 
 .filtres p {
     display: flex;
@@ -423,10 +427,18 @@ footer h3 {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+
+/******** Section Recherche and Filtres ********/
+
+    /**** Filtres ***/
+
+    .filtres-button {
+        display:flex ;
+    }
+
     .filtres {
         display: flex;
         flex-direction: column;
-        max-width: 668px;
     }
 
     .filtres p {
@@ -442,9 +454,13 @@ footer h3 {
         font-weight: 700;
     }
 
+/****** Hebergements And Populaires ***********/
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
+
+/****** Hebergements ***********/  
 
     .hebergements {
         width: 100%;
@@ -457,6 +473,8 @@ footer h3 {
     .hebergements-cards .card-subtitle {
         font-size: 13px;
     }
+
+/****** Populaires ***********/
 
     .populaires {
         width: 100%;
@@ -481,6 +499,8 @@ footer h3 {
         font-size: 13px;
     }
 
+/****** Activités à Marseille ******/
+
     .activites-cards .card {
         height: 258px;
     }
@@ -498,9 +518,12 @@ footer h3 {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
      
+
     .main-container {
         padding: 0;
     }
+
+/* Header */
 
     header {
         display: flex;
@@ -512,23 +535,33 @@ footer h3 {
         padding: 30px;
     }
 
-    nav {
-        width: 100%;
-    }
 
     nav ul {
-        padding: 0 0 15px 0;
-        display: flex;
-        justify-content: center;
+        padding:0;
         margin: 0 0 15px 0;
+        gap: 0;
+    }
+
+    nav li {
         border-bottom: #f2f2f2 solid 2px;
+        padding: 0 0 15px 0;
+        width: 100%;
+        text-align: center;
     }
 
     nav a:hover {
-        border-bottom: #0065FC solid 2px;
         border-top: none;
+    }
+
+    nav li:hover {
+        border-bottom: #0065FC solid 2px;
         padding-bottom: 15px;
     }
+
+
+/******** Section Recherche and Filtres ********/
+
+/*** Recherche ***/
 
     .recherche-and-filtres {
         padding: 30px 20px 30px 20px;
@@ -546,37 +579,57 @@ footer h3 {
         display: none;
     }
 
+    .form-rechercher form {
+        display: flex;
+        width: 100%;
+        min-width: 150px;
+    }
+
+    .input-content {
+        flex: 1;
+    }
+
    .loupe-button {
     display : inline;
-    border-radius: 0 15px 15px 0;
+    border-radius: 15px 15px 15px 15px;
     border: none; 
     background-color: #0065FC;
     width: 49px;
     font-size: 18px;
     font-weight: 500;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    }
 
-   .input-content {
-    width: 180px;
+   .icon-rechercher {
+    min-width: 49px;
    }
 
    ::placeholder {
     font-size: 16px;
     }
 
-   .filtres-button {
-    flex-wrap: wrap;
-   }
+/**** Filtres ***/
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filtres-button {
+        max-height: 50px;
+    }
 
     .filtres-items {
-    border: 2px solid #d9d9d9;
-    padding: 10px 19px;
-    border-radius: 25px;
-    background-color: white;
-    font-size: 12px;
-    font-weight: 700;
-    width
-}   
+        width:100%;
+        font-size: 14px;
+        padding: 10px 9px;
+    }
+
+
+
+
+
+/****** Activités à Marseille *******/
 
    .activites-cards {
     flex-wrap:wrap ;
@@ -585,7 +638,4 @@ footer h3 {
     footer {
         flex-wrap: wrap;
     }
-
-
-
-
+    
