@@ -518,7 +518,6 @@ footer h3 {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
      
-
     .main-container {
         padding: 0;
     }
@@ -564,7 +563,7 @@ footer h3 {
 /*** Recherche ***/
 
     .recherche-and-filtres {
-        padding: 30px 20px 30px 20px;
+        padding: 30px 20px 0px 20px;
     }
 
     .section-title {
@@ -625,17 +624,115 @@ footer h3 {
         padding: 10px 9px;
     }
 
+    .recherche-info {
+        margin-bottom: 5px;
+    }
 
+    .icon-info {
+        width: 24px;
+        height: 24px; 
+    }
 
+    .icon-info i {
+        font-size: 12px;
+        padding: 10px;
+    }
 
+/****** Hebergements And Populaires ***********/
+
+    .hebergements-and-populaires {
+    display: flex;
+    flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section {
+    padding: 30px 20px;
+    border-radius: 0;
+    margin-bottom: 15px;
+    }
+
+/****** Hebergements ***********/ 
+
+    .hebergements-cards {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    .info-plus p {
+        padding-top: 15px;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        padding: 20px;
+        background-color: white;
+    }
+
+/****** Populaires ***********/
+
+    .populaires {
+        margin-top: 0;
+        background-color: var(--main-bg-color);
+    }
+
+    .populaires-title {
+        padding-bottom: 15px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards .card {
+        margin-top: 0;
+    }
+
+    .card-title {
+        padding-right: 5px;
+    }
 
 /****** Activités à Marseille *******/
 
-   .activites-cards {
-    flex-wrap:wrap ;
-   }
-    
-    footer {
-        flex-wrap: wrap;
+    .activites-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .activites-cards a {
+        width: 100%;
     }
     
+
+/****** Footer ******/
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 50px;
+    }
+
+    .footer-item {
+        padding: 0;
+    }
+
+    .footer-item ul {
+        margin-bottom: 0;
+    }
+
+    .footer-item li {
+        margin-bottom: 0;
+    }
+}
