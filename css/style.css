@@ -127,6 +127,10 @@ nav a:hover {
     align-items: center;
 }
 
+.icon-rechercher i {
+    color: #000000;
+}
+
 form {
     height: 49px;
     display: flex;
@@ -196,6 +200,7 @@ form {
 
 .filtres i {
     padding-right: 10px;
+    color: #0065fc;
 }
 
 .filtres-items:hover {
@@ -208,6 +213,10 @@ form {
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.recherche-info i {
+    color: #0065fc;
 }
 
 .recherche-info p {
